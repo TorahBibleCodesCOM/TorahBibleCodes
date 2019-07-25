@@ -8,3 +8,9 @@ http://www.TorahBibleCodes.com
 https://github.com/torahbiblecodes
 <br />
 https://stackoverflow.com/users/8911652/torahbiblecodes
+
+# Known Bugs and Open Issues
+
+# Current Development Status
+
+# Structure of App / Program
