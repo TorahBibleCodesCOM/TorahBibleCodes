@@ -25,20 +25,88 @@ n, n + d, n + 2d, ..., n + (k - 1)d
 WRR define n as the start, d as the skip between letters in the search-term, and k as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (n, d, k).
 
 # The Texts Used:
-## Genesis
+## 1.) Genesis
 https://github.com/TorahBibleCodes/Sefaria-Export/blob/master/json/Tanakh/Torah/Genesis/Hebrew/Tanach%20with%20Text%20Only.json
 
-## Exodus
+## 2.) Exodus
 https://github.com/TorahBibleCodes/Sefaria-Export/blob/master/json/Tanakh/Torah/Exodus/Hebrew/Tanach%20with%20Text%20Only.json
 
-## Leviticus
+## 3.) Leviticus
 https://github.com/TorahBibleCodes/Sefaria-Export/blob/master/json/Tanakh/Torah/Leviticus/Hebrew/Tanach%20with%20Text%20Only.json
 
-## Numbers
+## 4.) Numbers
 https://github.com/TorahBibleCodes/Sefaria-Export/blob/master/json/Tanakh/Torah/Numbers/Hebrew/Tanach%20with%20Text%20Only.json
 
-## Deuteronomy
+## 5.) Deuteronomy
 https://github.com/TorahBibleCodes/Sefaria-Export/blob/master/json/Tanakh/Torah/Deuteronomy/Hebrew/Tanach%20with%20Text%20Only.json
+
+## 6.) Joshua
+
+## 7.) Judges
+
+## 8.) I Samuel
+
+## 9.) II Samuel
+
+## 10.) I Kings
+
+## 11.) II Kings
+
+## 12.) Isaiah
+
+## 13.) Jeremiah
+
+## 14.) Ezekiel
+
+## 15.) Hosea
+
+## 16.) Joel
+
+## 17.) Amos
+
+## 18.) Obadiah
+
+## 19.) Jonah
+
+## 20.) Micah
+
+## 21.) Nahum
+
+## 22.) Habakkuk
+
+## 23.) Zephaniah
+
+## 24.) Haggai
+
+## 25.) Zechariah
+
+## 26.) Malachi
+
+## 27.) Psalms
+
+## 28.) Proverbs
+
+## 29.) Job
+
+## 30.) Song of Songs
+
+## 31.) Ruth
+
+## 32.) Lamentations
+
+## 33.) Ecclesiastes
+
+## 34.) Esther
+
+## 35.) Daniel
+
+## 36.) Ezra
+
+## 37.) Nehemiah
+
+## 38.) I Chronicles
+
+## 39.) II Chronicles
 
 
 # How to Run the App / Program
@@ -61,14 +129,14 @@ https://github.com/TorahBibleCodes/Sefaria-Export/blob/master/json/Tanakh/Torah/
 <br />7.) CALL MODULE.FUNCTION() #7 - DICTIONARY OF VERSES CREATE WITH TUPLES AS KEYS, e.g. (1,1,1) = BOOK (1) GENESIS CHAPTER 1, VERSE 1...
 <br />8.) CALL MODULE.FUNCTION() #8 - DATA OBJECTS CREATE; RETURNS 1.) STRING OF LETTERS, 2.) LIST OF LETTERS, 3.) DICT OF LETTERS, 4.) DICT OF LETTERS
 <br />9.) CALL MODULE.FUNCTION() #9 - GET NUMBER VALUE OF EACH LETTER IN STRING
-
+<br />10.) STEP 10 - IN DEVELOPMENT
 
 # Program Concepts:  Objects - D, DL, D5, L, S
 ## "D" Object:  Dictionary of Verses Object
 
 For any text chosen (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five together), the text is parsed and a Python dictionary "D" is created that allows one to access each verse by 3-digit tuple key (Book, Chapter, Verse).  After choosing the text(s) to be searched, a Python dictionary "D" is created to contain each verse - accessible by 3-digit tuple key.
 
-## Each verse in the Torah is accessible via the Python dictionary "D" with a unique 3-digit tuple key as per following examples:
+## Each verse in the Hebrew Bible is accessible via the Python dictionary "D" with a unique 3-digit tuple key as per following examples:
 
 `<br />D[1,1,1] = GENESIS 1:1
 <br />D[1,1,7] = GENESIS 1:7
@@ -231,7 +299,7 @@ For any text chosen (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all fi
 <br />S[0:6] --> 'בראשית'
 
 
-## Each letter's Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a MODULE.FUNCTION() call:
+## N Object - List of Numbers:  Each letter's Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a MODULE.FUNCTION() call (NOTE:  Numbers returned are left-to-right; Hebrew letters returned in L Object are right-to-left)
 string = 'בראשית'
 <br />mod_9GetNumberValue.fn_GetNumberValue(string) --> [2, 200, 1, 300, 10, 400]
 
